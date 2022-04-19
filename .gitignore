@@ -19,10 +19,15 @@
 .env.production.local
 
 .env
-.jshintrc
+.eslintrc.json
+.eslintignore
 
-jsconfig.json
+/.git
+/.vscode
+
 package-lock.json
+
+/data
 
 logfile.log
 npm-debug.log*
