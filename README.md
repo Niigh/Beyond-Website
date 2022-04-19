@@ -4,6 +4,6 @@
 
 Website of Beyond App, a Destiny 2 multiplatform assistant.
 
-## IMPORTANT : STILL WORK IN PROGRESS
+https://www.beyondapp.io
 
 ---
