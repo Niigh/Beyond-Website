@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {  
+  --color-bg: #263242;
+  --color-text: #dfc8ba;
+  --color-subtext: #702a30;
+}
+
+@layer base {
+    body {
+        @apply font-[Manrope]
+    }
+
+    li {
+        @apply p-4
+    }
+
+    h1 {
+        @apply text-3xl md:text-4xl font-bold
+    }
+}

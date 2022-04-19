@@ -1,9 +1,12 @@
 import React from 'react';
 
+//import { Features, Footer, Header } from './containers';
+import { Navbar } from './components';
+
 const App = () => {
   return (
-    <div>
-        <h1>Beyond</h1>
+    <div className='App'>
+      <Navbar />
     </div>
   )
 }
