@@ -5,22 +5,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-:root {  
-  --color-bg: #263242;
-  --color-text: #dfc8ba;
-  --color-subtext: #702a30;
+:root {
+    @apply dark
+}
+
+.light {
+    --color-bg: #dfc8ba;
+    --color-text: #263242;
+    --color-subtext: #702a30;
+
+    /* Dark theme */
+    --primary-light: #263242;
+    --primary-dark: #1d2631;
+}
+
+.dark {
+    --color-bg: #263242;
+    --color-text: #dfc8ba;
+    --color-subtext: #702a30;
+
+    /* Dark theme */
+    --primary-light: #c7b2a4;
+    --primary-dark: #a79286;
 }
 
 @layer base {
     body {
-        @apply font-[Manrope]
+        @apply font-[Manrope] bg-[color:var(--color-bg)]
     }
 
     li {
-        @apply p-4
+        @apply p-4 text-xl text-[color:var(--color-text)]
     }
 
     h1 {
-        @apply text-3xl md:text-4xl font-bold
+        @apply text-3xl md:text-4xl font-bold text-[color:var(--color-text)]
     }
+
+    h2 {
+        @apply text-3xl font-bold text-[color:var(--color-text)]
+    }
+
+    h3 {
+        @apply text-xl font-bold text-[color:var(--color-text)]
+    }
+
+    button {
+        @apply p-3 bg-gradient-to-br from-[var(--primary-dark)] to-[var(--primary-light)] text-gray-700 rounded-md
+    }
+}
+
+@layer components {
+    /* .App {
+        @apply bg-[color:var(--color-bg)]
+    } */
+}
+
+@layer utilities {
+    
 }
