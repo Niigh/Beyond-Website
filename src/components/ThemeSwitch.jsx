@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import useDarkTheme from '../hook/useDarkTheme';
-import { DarkModeSwitch } from 'react-toggle-dark-mode'
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 const ThemeSwitch = () => {
     const [colorTheme, setTheme] = useDarkTheme();
@@ -11,7 +11,7 @@ const ThemeSwitch = () => {
         setDarkTheme(checked);
     }
     return(
-        <div className='flex flex-col items-center'>
+        <div className='flex justify-center items-center'>
             <DarkModeSwitch 
                 checked={darkTheme} 
                 onChange={toggleDarkMode}

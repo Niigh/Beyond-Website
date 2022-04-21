@@ -1,6 +1,6 @@
 import React from 'react';
 
-//import { Features, Footer, Header } from './containers';
+import { Footer } from './containers';
 import { Navbar } from './components';
 
 
@@ -8,6 +8,8 @@ const App = () => {
     return (
         <div className='App'>
             <Navbar />
+
+            <Footer />
         </div>
     )
 }
