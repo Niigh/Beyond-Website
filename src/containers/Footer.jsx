@@ -7,8 +7,9 @@ import {
 
 const Footer = () => {
     return (
-        <div className='w-full bg-[color:var(--color-footer)]'>
-            <div className='grid max-w-[1620px] mx-auto py-16 px-4 xl:grid-cols-5 md:grid-cols-3 grid-cols-1 text-[color:var(--color-text)]'>
+        <div className='w-full bg-[color:var(--color-footer)] shadow-blurborder shadow-[color:var(--color-footer)]'>
+
+            <div className='grid max-w-[1620px] mx-auto py-16 px-4 pl-20 xl:grid-cols-5 md:grid-cols-3 grid-cols-1 text-[color:var(--color-text)]'>
                 <div className='md:col-span-3 xl:col-span-2 py-4'>
                     <h1>BEYOND</h1>
                     <p className='flex z-0 pt-4 pb-2 max-w-[50%] font-light opacity-90 text-[color:var(--color-p)]'>An ecosystem to manage your Destiny 2 account and characters through multiple plateforms.</p>
@@ -48,7 +49,12 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
+            </div>
 
+            <hr className="h-px max-w-[80%] mx-auto my-6 border-[color:var(--color-bg)]"></hr>
+
+            <div>
+                <p className=" pb-6 text-center text-[color:var(--color-p)]">© Beyond 2022 - All rights reserved</p>
             </div>
         </div>
     );
